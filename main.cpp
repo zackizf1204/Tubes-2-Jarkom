@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <string.h>
 
 class Node{
 public:
@@ -23,7 +22,7 @@ int main(int argc, char *argv[]){
     int inputnode;
     int edge;
     std::cin >> inputnode >> edge;
-    Node matriks[inputnode+1][inputnode+1];
+    Node matriks[inputnode][inputnode];
     int i,j;
     //Inisialisasi matriks
     for(i=0;i<inputnode;i++){
@@ -57,20 +56,19 @@ int main(int argc, char *argv[]){
         int source;
         int dest;
         std::cin >> source >> dest;
-        if(matriks[source-1][dest-1].getDistance()==1){
-            for(j=0;j<inputinfo;j++){
-                if((matriks[source-1][j].getDistance()!=0)&&(matriks[source-1][j].getDistance()!=-1)&&(j!=source-1)){
-                    if((matriks[dest-1][j].getDistance()==-1)||(matriks[source-1][j].getDistance()<matriks[dest-1][j].getDistance()-1)){
+            for(j=0;j<inputnode;j++){
+                if(matriks[source-1][j].getDistance()>0){
+                    if((matriks[dest-1][j].getDistance()==-1)||(matriks[source-1][j].getDistance()<(matriks[dest-1][j].getDistance()-1))){
                         matriks[dest-1][j].setDistance(matriks[source-1][j].getDistance()+1);
                         matriks[dest-1][j].setNextHop(source);
                     }else{
-                        if((matriks[source-1][j].getDistance()==matriks[dest-1][j].getDistance()-1)&&(source<matriks[dest-1][j].getNextHop())){
+                        if((matriks[source-1][j].getDistance()!=0)&&(matriks[source-1][j].getDistance()<(matriks[dest-1][j].getDistance()))&&(source<matriks[dest-1][j].getNextHop())){
+                            matriks[dest-1][j].setDistance(matriks[source-1][j].getDistance()+1);
                             matriks[dest-1][j].setNextHop(source);
                         }
                     }
                 }
             }
-        }
     }
 
     for(i=0;i<inputnode;i++){
