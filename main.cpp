@@ -5,11 +5,11 @@ class Node{
 public:
   // Construction
   Node() { }
-  Node(float d,float n) : distance(d), nextHop(n) {}
+  Node(int d,int n) : distance(d), nextHop(n) {}
 
   // Getters
-  float getDistance() const {return distance;}
-  float getNextHop() const {return nextHop;}
+  int getDistance() const {return distance;}
+  int getNextHop() const {return nextHop;}
 
   // Setters
   void setDistance(int val) {distance = val;}
@@ -19,24 +19,13 @@ private:
   int nextHop;
 };
 
-std::vector<std::string> split(const std::string& s, char delimiter)
-{
-   std::vector<std::string> tokens;
-   std::string token;
-   std::istringstream tokenStream(s);
-   while (std::getline(tokenStream, token, delimiter))
-   {
-      tokens.push_back(token);
-   }
-   return tokens;
-}
-
 int main(int argc, char *argv[]){
     int inputnode;
     int edge;
     std::cin >> inputnode >> edge;
     Node matriks[inputnode+1][inputnode+1];
     int i,j;
+    //Inisialisasi matriks
     for(i=0;i<inputnode;i++){
         for(j=0;j<inputnode;j++){
             if(i==j){
@@ -49,7 +38,7 @@ int main(int argc, char *argv[]){
             
         }
     }
-
+    //Input ketetanggaan
     for(i=0;i<edge;i++){
         int source;
         int dest;
@@ -59,14 +48,6 @@ int main(int argc, char *argv[]){
         matriks[dest-1][source-1].setDistance(1);
         matriks[dest-1][source-1].setNextHop(source);
     }
-    /*
-    for(i=0;i<inputnode;i++){
-        for(j=0;j<inputnode;j++){
-            std::cout << matriks[i][j].getDistance() << ' ';
-        }
-        std::cout <<'\n';
-    }
-    */
 
     int inputinfo;
     std::cin >> inputinfo;
