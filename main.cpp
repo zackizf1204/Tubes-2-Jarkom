@@ -71,6 +71,7 @@ int main(int argc, char *argv[]){
             }
     }
 
+    //TAMPILKAN HASIL
     for(i=0;i<inputnode;i++){
         for(j=0;j<inputnode;j++){
             std::cout << matriks[i][j].getDistance() << " " << matriks[i][j].getNextHop() << '\n';
