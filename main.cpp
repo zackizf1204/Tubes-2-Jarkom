@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <string.h>
 
 class Node{
 public:
@@ -48,15 +49,15 @@ int main(int argc, char *argv[]){
             
         }
     }
-    for(i=0;i<inputnode;i++){
-        std::string input;
-        std::cin >> input;
-        std::vector<std::string> result = split(input,' ');
-        for(std::string n : result) {
-            int num = atoi(n.c_str());
-            matriks[i][num-1].setDistance(1);
-            matriks[i][num-1].setNextHop(num);
-        }
+
+    for(i=0;i<edge;i++){
+        int source;
+        int dest;
+        std::cin >> source >> dest;
+        matriks[source-1][dest-1].setDistance(1);
+        matriks[source-1][dest-1].setNextHop(dest);
+        matriks[dest-1][source-1].setDistance(1);
+        matriks[dest-1][source-1].setNextHop(source);
     }
     /*
     for(i=0;i<inputnode;i++){
@@ -87,7 +88,6 @@ int main(int argc, char *argv[]){
         }
     }
 
-    std::cout <<'\n';
     for(i=0;i<inputnode;i++){
         for(j=0;j<inputnode;j++){
             std::cout << matriks[i][j].getDistance() << " " << matriks[i][j].getNextHop() << '\n';
