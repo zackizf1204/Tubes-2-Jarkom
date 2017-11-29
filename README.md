@@ -1,12 +1,12 @@
-# Tubes-2-Jarkom#
+# Tubes-2-Jarkom
 
-##Petunjuk Penggunaan Program##
+##Petunjuk Penggunaan Program
 
-##Penjelasan Program##
+##Penjelasan Program
 
-#Pembagian Tugas##
+##Pembagian Tugas
 
-#Jawaban ertanyaan##
+##Jawaban ertanyaan
 Markup	: 1. 	Apakah perbedaan dari routing protocol distance-vector dan link state? Manakah yang​ ​ lebih​ ​ baik​ ​ untuk​ ​ digunakan?
 
 1. 	Distance Vector
