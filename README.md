@@ -2,6 +2,17 @@
 
 ### Petunjuk Penggunaan Program
 
+__Menjalankan Program__
+
+__Format Input__
+Baris Pertama berisi sebuah bilangan N, jumlah node pada topologi
+N baris berikutnya masing-masing berisi nol atau lebih angka yang dipisahkan dengan tanda koma
+Angka-angka pada baris ke-i menyatakan node-node yang terhubung dengan node ke-i.
+Jika tidak ada node yang terhubung, maka baris tersebut hanya berupa newline('\n') saja.
+Baris berikutnya berisi sebuah bilangan S atau banyaknya skenario yang terjadi.
+S baris berikutnya masing-masing terdiri dari 2 bilangan.
+Baris ke-i berisi u dan v, yang menyatakan bahwa node u mengirim informasi ke node v
+
 ### Penjelasan Program
 
 ### Pembagian Tugas
