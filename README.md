@@ -7,7 +7,7 @@
 ## Pembagian Tugas
 
 ## Jawaban ertanyaan
-Markup	: 1. 	Apakah perbedaan dari routing protocol distance-vector dan link state? Manakah yang​ ​ lebih​ ​ baik​ ​ untuk​ ​ digunakan?
+__A. 	Apakah perbedaan dari routing protocol distance-vector dan link state? Manakah yang​ ​ lebih​ ​ baik​ ​ untuk​ ​ digunakan?__
 
 1. 	Distance Vector
 	Sesuai namanya, distance vector routing menggunakan jarak untuk menentukan rute terbaik pada jaringan. Biasanya jarak ditentukan oleh jumlah hops ke Network tujuan. Algoritma yang digunakan adalah Bellman-Ford, untuk menghitung rute terbaik 
@@ -23,5 +23,4 @@ Markup	: 1. 	Apakah perbedaan dari routing protocol distance-vector dan link sta
 	Sedangkan untuk link state lebih tepat jika diterapkan pada jaringan skala besar, karena waktu konvergensinya lebih cepat, tetapi membutuhkan CPU yang banyak. Hal ini menyebabkan link state perlu maintenance yang lebih banyak dan sulit di konfigurasi.
 
 
-2.	 Pada implementasinya saat ini manakah yang lebih banyak digunakan,
-distance-vector​ ​ atau​ ​ ​ link​ ​ state?​ ​ Kenapa?
+__B.	 Pada implementasinya saat ini manakah yang lebih banyak digunakan, distance-vector​ ​ atau​ ​ ​ link​ ​ state?​ ​ Kenapa?__
