@@ -6,7 +6,7 @@
 
 ### Pembagian Tugas
 
-### Jawaban ertanyaan
+### Jawaban Pertanyaan
 __A. 	Apakah perbedaan dari routing protocol distance-vector dan link state? Manakah yang​ ​ lebih​ ​ baik​ ​ untuk​ ​ digunakan?__
 
 1. 	Distance Vector
