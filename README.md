@@ -1,6 +1,6 @@
-# Tubes-2-Jarkom
+# IF3130 Jaringan Komputer - Tugas Besar 2 Distance Vector Simulation
 
-### Petunjuk Penggunaan Program
+## Petunjuk Penggunaan Program
 
 __Menjalankan Program__
 
@@ -13,11 +13,11 @@ Baris berikutnya berisi sebuah bilangan S atau banyaknya skenario yang terjadi.
 S baris berikutnya masing-masing terdiri dari 2 bilangan.
 Baris ke-i berisi u dan v, yang menyatakan bahwa node u mengirim informasi ke node v
 
-### Penjelasan Program
+## Penjelasan Program
 
-### Pembagian Tugas
+## Pembagian Tugas
 
-### Jawaban Pertanyaan
+## Jawaban Pertanyaan
 __A. 	Apakah perbedaan dari routing protocol distance-vector dan link state? Manakah yang​ ​ lebih​ ​ baik​ ​ untuk​ ​ digunakan?__
 
 1. 	Distance Vector
@@ -35,3 +35,10 @@ __A. 	Apakah perbedaan dari routing protocol distance-vector dan link state? Man
 
 
 __B.	 Pada implementasinya saat ini manakah yang lebih banyak digunakan, distance-vector​ ​ atau​ ​ ​ link​ ​ state?​ ​ Kenapa?__
+
+## Authors
+
+* Rio Dwi Putra Perkasa - 13515012
+* Muhammad Akmal Pratama - 13515135
+* Zacki Zulfikar Fauzi - 13515147
+
