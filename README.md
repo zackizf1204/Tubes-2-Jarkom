@@ -2,20 +2,31 @@
 
 ## Petunjuk Penggunaan Program
 
-__Menjalankan Program__
+### Menjalankan Program
+Program ini ditulis dalam bahasa C++. Untuk menjalankan program harus melakukan kompilasi terlebih dahulu. Kompilasi
+cukup dilakukan dengan perintah
+```
+make
+```
+pada bash.
 
-__Format Input__
-Baris Pertama berisi sebuah bilangan N, jumlah node pada topologi
-N baris berikutnya masing-masing berisi nol atau lebih angka yang dipisahkan dengan tanda koma
-Angka-angka pada baris ke-i menyatakan node-node yang terhubung dengan node ke-i.
-Jika tidak ada node yang terhubung, maka baris tersebut hanya berupa newline('\n') saja.
-Baris berikutnya berisi sebuah bilangan S atau banyaknya skenario yang terjadi.
-S baris berikutnya masing-masing terdiri dari 2 bilangan.
-Baris ke-i berisi u dan v, yang menyatakan bahwa node u mengirim informasi ke node v
+### Format Input
+Baris pertama berisi dua  bilangan N dan M, jumlah node pada topologi dan jumlah edge pada topologi.
+M baris berikutnya masing-masing berisi 2 bilangan. Baris ke-i berisi ui dan vi, yang menyatakan bahwa node ui terhubung dengan node vi.
+Baris berikutnya berisi sebuah bilangan S, banyaknya skenario yang terjadi.
+S baris berikutnya masing-masing terdiri dari 2 bilangan. Baris ke-i berisi xi dan yi, yang menyatakan bahwa node xi akan mencoba mengirim informasi ke node yi.
 
 ## Penjelasan Program
+Pada program ini, topologi direpresentasikan dengan dua buah matriks, yaitu nextHop dan distance sedangkan sebuah node tunggal
+direpresentasikan oleh sebuah baris pada matriks nextHop dan distance. Untuk indeks i dan j pada matriks berarti informasi routing dari node-i ke node-j.
+
+Pengiriman pesan terjadi ketika program menerima input skenario. Untuk setiap node asal yang berkomunikasi pada node tujuan, lakukan pembaruan pada node tujuan apabila node asal terhubung dengan suatu node lain yang belum terhubung dengan node tujuan.
 
 ## Pembagian Tugas
+
+* 13515012 : readme, soal 1
+* 13515135 : generate test
+* 13515147 : update table
 
 ## Jawaban Pertanyaan
 __A. 	Apakah perbedaan dari routing protocol distance-vector dan link state? Manakah yang​ ​ lebih​ ​ baik​ ​ untuk​ ​ digunakan?__
