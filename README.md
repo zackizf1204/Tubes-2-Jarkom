@@ -24,9 +24,9 @@ Pengiriman pesan terjadi ketika program menerima input skenario. Untuk setiap no
 
 ## Pembagian Tugas
 
-* 13515012 : readme, soal 1
-* 13515135 : generate test
-* 13515147 : update table
+* 13515012 : readme, soal 1, soal 2, Inisialisasi Table.
+* 13515135 : generate test, format input, readme.
+* 13515147 : Algoritma update table, penjelasan program, output program, makefile.
 
 ## Jawaban Pertanyaan
 __A. 	Apakah perbedaan dari routing protocol distance-vector dan link state? Manakah yang​ ​ lebih​ ​ baik​ ​ untuk​ ​ digunakan?__
@@ -46,6 +46,8 @@ __A. 	Apakah perbedaan dari routing protocol distance-vector dan link state? Man
 
 
 __B.	 Pada implementasinya saat ini manakah yang lebih banyak digunakan, distance-vector​ ​ atau​ ​ ​ link​ ​ state?​ ​ Kenapa?__
+
+Menurut kami implementasi routing protocol saat ini lebih banyak menggunakan distance vector karena lebih tepat digunakan untuk jaringan kecil. Selain itu untuk membangun sebuah distance vector routing protocol lebih murah dibandingkan untuk membangun Linkstate, karena CPU yang dibutuhkan lebih sedikit. Untuk saat ini Link state sebagian besar digunakan untuk jaringan berukuran besar, pada organisasi-organisasi berskala besar.
 
 ## Authors
 
