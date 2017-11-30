@@ -1,4 +1,4 @@
-all:
-	g++ -o main src/client.cpp
+all: src/main.cpp
+	g++ --std=c++11 -o main main.cpp
 run:
 	./main
